@@ -1,0 +1,40 @@
+.fade-in-image { animation: fadeIn 250s; }
+.wrapper{
+    display:inline-flex;
+  
+  }
+  .wrapper .static-txt
+  {
+  color:#fff;
+  font-size:100px;
+  font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left:15px;
+  }
+  .dynamic-txts li{
+    color:#FC6D6D;
+    list-style: none;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .dynamic-txts li span{
+    position: relative;
+  }
+  .dynamic-txts li span::after{
+    content:"";
+    position: absolute;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:white ;
+    border-left: 4.5px solid black;
+    animation: typing 1.7s steps(12) infinite;
+  
+  }
+  @keyframes typing{
+    100%{
+      left:100%;
+      margin:0 -35px 0 35px;
+    }
+  }
